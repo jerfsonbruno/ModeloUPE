@@ -1,6 +1,6 @@
-Package: modeloUFCG
+Package: modeloUPE
 Type: Package
-Title: Modelo de Relatorio para UAest-UFCG
+Title: Modelo de Relatorio para UPE Caruaru
 Version: 0.6.0
 Date: 2019-09-05
 Author: Jerfson
@@ -12,7 +12,7 @@ Description: Um estilo de relatorio tipo 'Royal Society Open Science'
   com 'LaTeX', em mente, para geracao de pdfs. Fortemente baseado no 
  modelo do professor Marcus Nunes <marcus@marcusnunes.me> 
   e adaptado para o uso pessoal. 
-URL: https://github.com/jerfsonbruno/ModeloUFCG
+URL: https://github.com/jerfsonbruno/ModeloUPE
 Imports: rmarkdown, knitr, xfun, yaml
 Suggests: ggplot2, ggfortify, bookdown, GGally, corrplot, broom, hnp, lm.beta
 License: MIT + file LICENSE

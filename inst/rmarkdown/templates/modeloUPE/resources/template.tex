@@ -3,9 +3,9 @@
 %% 2012/13/12
 %% developed by Techset
 %%
-%% This file describes the coding for modeloUFCG.cls
+%% This file describes the coding for modeloUPE.cls
 
-\documentclass[a4paper]{modeloUFCG} %%%% where modeloUFCG is the template name
+\documentclass[a4paper]{modeloUPE} %%%% where modeloUPE is the template name
 
 \usepackage[portuguese]{babel}
 \usepackage[T1]{fontenc}
@@ -22,7 +22,7 @@
 %% longtable vizinhas.
 \usepackage{float}
 
-%% A classe modeloUFCG.cls calcula largura/altura de texto e margens
+%% A classe modeloUPE.cls calcula largura/altura de texto e margens
 %% assumindo o formato de trim de um periodico (174mm x 247mm), mas o PDF
 %% final e produzido em A4 (210mm x 297mm). Isso deixa sobras enormes nas
 %% margens. O pacote geometry forca margens A4 corretas, sobrepondo o
@@ -85,26 +85,26 @@ $endfor$
   \leftskip0pc\rightskip0pc\noindent\ignorespaces
 }{\par\egroup}
 
-%% A classe modeloUFCG.cls define \@maketitle atraves de mecanismos internos
+%% A classe modeloUPE.cls define \@maketitle atraves de mecanismos internos
 %% (fila de duas colunas / bloco de revisao editorial) que absorvem qualquer
 %% redefinicao de \@maketitle sem executa-la. Para evitar essa maquinaria,
 %% \maketitle e redefinido diretamente aqui.
 \renewcommand\maketitle{%
   \vspace*{-2.2cm}
   \noindent\begin{minipage}[c]{2.2cm}
-    \includegraphics[width=2cm]{lea_logo_bw}
+    \includegraphics[width=2cm]{upe}
   \end{minipage}%
   \begin{minipage}[c]{\textwidth-2.2cm}
     {\fontfamily{\sfdefault}\fontseries{b}\fontshape{n}\fontsize{12}{14}\selectfont
-      UNIVERSIDADE FEDERAL DE CAMPINA GRANDE\par}
+      UNIVERSIDADE DE PERNAMBUCO --- CAMPUS CARUARU\par}
     $if(disciplina)$
       {\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{11}{13}\selectfont
        Disciplina: $disciplina$%
        $if(periodo)$ \quad---\quad Período: $periodo$$endif$\par}
     $endif$
-    $if(professores)$
+    $if(professor)$
       {\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{11}{13}\selectfont
-       Professores: $for(professores)$$professores$$sep$; $endfor$\par}
+       Professor: $professor$\par}
     $endif$
   \end{minipage}
   \vskip4pt

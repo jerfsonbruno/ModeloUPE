@@ -8,14 +8,14 @@
 #' @importFrom rmarkdown output_format knitr_options pandoc_options
 #'   pandoc_variable_arg includes_to_pandoc_args
 #' @author Thierry Onkelinx, \email{thierry.onkelinx@@inbo.be}
-modeloUFCG <- function(
+modeloUPE <- function(
   ..., keep_tex = TRUE, latex_engine = 'xelatex', pandoc_args = NULL,
   includes = NULL, fig_crop = TRUE
 ) {
 
   extra <- list(...)
 
-  template <- find_resource('modeloUFCG')
+  template <- find_resource('modeloUPE')
   args <- c(
     "--template", template, pandoc_variable_arg("documentclass", "article"),
     pandoc_args, "--natbib", "--no-highlight", includes_to_pandoc_args(includes)

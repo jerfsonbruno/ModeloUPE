@@ -1,16 +1,13 @@
 ---
 title: "Modelagem do Comprimento da Sépala em Flores do Gênero Iris"
-disciplina: "Estatística Aplicada"
-periodo: "2026.1"
-professores:
-  - "Prof. Gilberto Matos"
-  - "Profa. Amanda Gomes"
+disciplina: "Probabilidade e Estatística"
+professor: "Jerfson Bruno"
 author:
   - name: "[Nome do Aluno]"
     affiliation: "1"
 address:
   - code: "1"
-    address: "Departamento de Ciência da Computação - UFCG"
+    address: "Sistemas de Informação — UPE Caruaru"
 abstract: |
   Analisamos a base `iris` sob a ótica de um modelo de regressão linear múltipla,
   utilizando o comprimento da sépala (`Sepal.Length`) como variável resposta. Após
@@ -27,8 +24,8 @@ keywords:
   - "multicolinearidade"
   - "seleção de modelos"
   - "variáveis dummy"
-format: modeloufcg-pdf
-bibliography: modeloUFCG.bib
+format: modeloupe-pdf
+bibliography: modeloUPE.bib
 include-after-body: orientacoes.tex
 jupyter: python3
 ---

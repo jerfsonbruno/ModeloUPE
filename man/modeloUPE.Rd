@@ -1,8 +1,8 @@
-\name{modeloUFCG}
-\alias{modeloUFCG}
-\title{Modelo de Relatório para a Uaest-UFCG}
+\name{modeloUPE}
+\alias{modeloUPE}
+\title{Modelo de Relatório para a UPE Caruaru}
 \usage{
-modeloUFCG(..., keep_tex = TRUE, latex_engine = "xelatex",
+modeloUPE(..., keep_tex = TRUE, latex_engine = "xelatex",
   pandoc_args = NULL, includes = NULL, fig_crop = TRUE)
 }
 \arguments{
@@ -23,7 +23,7 @@ Output de R Markdown output para ser passado para
 \code{\link[rmarkdown:render]{render}}
 }
 \description{
-Modelo de documento para geração de relatórios da UAest-UFCG.
+Modelo de documento para geração de relatórios da UPE Caruaru.
 }
 \section{Document options}{
 
@@ -43,7 +43,7 @@ O arquivo de exemplo do pacote possui um relatório fictício com estas opções
 }
 \examples{
 \dontrun{
-rmarkdown::draft("MyArticle.Rmd", template = "pdf", package = "modeloUFCG")
+rmarkdown::draft("MyArticle.Rmd", template = "modeloUPE", package = "modeloUPE")
 rmarkdown::render("MyArticle.Rmd")
 }
 }

@@ -1,5 +1,5 @@
 %%% Modelo de relatorio para o Laboratorio de
-%%%   Estatistica Aplicada da UFRN
+%%%   Probabilidade e Estatística da UFRN
 %%%
 %%% Adaptado por Marcus Nunes - https://marcusnunes.me
 %%%   a partir do pacote rticles do R
@@ -12,7 +12,7 @@
 
 
 \NeedsTeXFormat{LaTeX2e}[2005/12/01]
-\ProvidesClass{modeloUFCG}
+\ProvidesClass{modeloUPE}
               [2005/12/01 v1.1
  Standard LaTeX document class]
 
@@ -411,7 +411,7 @@
 \clearpage\lastpage@putlabel}%
 
 \def\jname#1{\gdef\@jname{#1}}
-\def\@jname{modeloUFCG}
+\def\@jname{modeloUPE}
 
 \sodef\stitletrack{}{0.11em}{0.5em}{\z@}
 
@@ -493,7 +493,7 @@
 }
 
 % \def\ps@plain{\vskip-3pc\let\@mkboth\@gobbletwo
-%         %\def\@oddfoot{\noindent\raisebox{-7.5pt}{\hskip-12.8pt\includegraphics{modeloUFCG_Pubs_Logo_Line_CMYK}}
+%         %\def\@oddfoot{\noindent\raisebox{-7.5pt}{\hskip-12.8pt\includegraphics{modeloUPE_Pubs_Logo_Line_CMYK}}
 %         \def\@oddfoot{\noindent\raisebox{-7.5pt}{\hskip-12.8pt}
 %         \ifopenacc
 %            \hskip28.8pt\colorbox{copyrightcolor}{\hbox to 75mm{\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{7.5}{10}\selectfont 
@@ -1294,7 +1294,7 @@ at https://doi.org/\@doi\ or via http://\@jname.royalsocietypublishing.org.\par}
 \vspace*{-5.5pc}
 \noindent\begin{minipage}[!t]{50mm}
 \hskip-1pc
-\vbox to 242mm{{\vskip68pt\includegraphics[width = 5.3cm]{lea_logo_bw}\vskip21pt
+\vbox to 242mm{{\vskip68pt\includegraphics[width = 5.3cm]{upe}\vskip21pt
 {\fontfamily{\sfdefault}\fontseries{m}\fontshape{n}\fontsize{13.5}{15}\selectfont\raggedright 
 \textcolor{jobcolor}{}}
 \if@citearticle@provided

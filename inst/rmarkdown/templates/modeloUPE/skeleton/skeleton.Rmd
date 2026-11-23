@@ -2,12 +2,8 @@
 title: Modelagem do Comprimento da Sépala em Flores do Gênero Iris
 
 # informacoes da disciplina, exibidas no cabecalho do artigo
-disciplina: "Estatística Aplicada"
-periodo: "2026.1"
-professores:
-  - "Profa. Dra. Amanda Gomes"
-  - "Prof. Dr. Jerfson Bruno"
-  - "Prof. Dr. Gilberto Matos"
+disciplina: "Probabilidade e Estatística"
+professor: "Jerfson Bruno"
 
 # use letras para afiliacao
 # substitua "[Nome do Aluno]" pelos nomes dos ate 3 integrantes da equipe
@@ -20,7 +16,7 @@ author:
     affiliation: a
 address:
   - code: a
-    address: Departamento de Ciência da Computação - UFCG
+    address: Sistemas de Informação — UPE Caruaru
 
 # area do conhecimento (pelo menos uma)
 subject:
@@ -41,11 +37,11 @@ abstract: |
   Este trabalho aplica a metodologia de regressão linear múltipla (MRLM) ao clássico conjunto de dados Iris, coletado por Anderson e popularizado por Fisher, com o objetivo de modelar o comprimento da sépala a partir das demais variáveis morfológicas e da espécie da flor. Após uma análise exploratória uni e bivariada, incluindo correlações, box-plots e verificação de dados ausentes, ajustamos um modelo inicial com todas as variáveis morfológicas contínuas e identificamos multicolinearidade severa entre o comprimento e a largura da pétala. Comparamos modelos candidatos por AIC, BIC e teste F, selecionamos um modelo final e verificamos seus pressupostos através de análise de resíduos, gráfico de envelope simulado e identificação de pontos atípicos, de alavanca e influentes. Em seguida, incorporamos a espécie como variável qualitativa (dummy), discutindo a codificação por categoria de referência e o efeito de sua alteração sobre a interpretação dos coeficientes. Por fim, para dois conjuntos de valores das variáveis explicativas, apresentamos os intervalos de confiança para o valor médio esperado da variável resposta e os intervalos de predição para novas observações, com interpretação prática de ambos.
 
 # arquivo com a bibliografia do relatorio
-bibliography: modeloUFCG.bib
+bibliography: modeloUPE.bib
 
 output:
   bookdown::pdf_book:
-    base_format: modeloUFCG::modeloUFCG
+    base_format: modeloUPE::modeloUPE
     includes:
       after_body: orientacoes.tex
 ---
